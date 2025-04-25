@@ -2,7 +2,7 @@
 
 `VMWare Manager.ps1` is a PowerShell menu script designed to manage your VMWare ESXi servers.  It is intended for smaller environments - it does not use vCenter.
 
-<img src=https://raw.githubusercontent.com/ITAutomator/Assets/main/VMware/VMwareManagerMain.png alt="screenshot" width="500"/>
+<img src=https://raw.githubusercontent.com/ITAutomator/Assets/main/VMWare\VMWareManagerMain.png alt="screenshot" width="500"/>
 
 User guide: Click [here](https://github.com/ITAutomator/VMWareManager)  
 Download from GitHub as [ZIP](https://github.com/ITAutomator/VMWareManager/archive/refs/heads/main.zip)  
@@ -17,7 +17,8 @@ Or Go to GitHub [here](https://github.com/ITAutomator/VMWareManager) and click `
 
 Before using the script, ensure the following:
 
-1. **Powershell Module**: The program will prompt you to install the VMware PowerShell module.  Open a powershell admin prompt and enter: Install-Module -Name VMware.PowerCLI -Scope AllUsers [VMware PowerCLI Docs](https://developer.broadcom.com/powercli)
+1. **Powershell Module**: The program will prompt you to install the *VMware VMware.PowerCLI* module. [VMware PowerCLI Docs](https://developer.broadcom.com/powercli)  
+Open a powershell admin prompt and enter: `Install-Module -Name VMware.PowerCLI -Scope AllUsers` 
 2. **Esxi Servers to Inventory.csv**: A list of your servers.  A starter file will be created if needed.
 
 ## Installation
@@ -38,11 +39,12 @@ The script is careful about making changes, so that it can be run repeatedly, sk
 ## Menu: Report
 
 Use the Report menu to export a CSV report of your servers.  
+<img src=https://raw.githubusercontent.com/ITAutomator/Assets/main/VMWare\VMWareManagerReport.png alt="screenshot" width="500"/>
 
 ## Menu: Add Admin
 
-Adds an additional User (with password) as Administrator role to your servers.
-If the user already exists, the password is not touched but the user is added to the Administrator role.
-If everything is already OK, it is simply reported as such.
+Adds an additional User (with password) as Administrator role to your servers.  
+If the user already exists, the password is not touched but the user is added to the Administrator role.  
+If everything is already OK, it is simply reported as such.  
 
 More info here: [www.itautomator.com](https://www.itautomator.com/vmware-manager/)
